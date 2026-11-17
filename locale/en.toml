@@ -1,0 +1,17 @@
+"ui.metadata_override.title" = "Metadata Override"
+"ui.data_folder.browse.title" = "Select data folder"
+
+"options.data_folder" = "Folder containing user data files for genres, series and overrides"
+
+"help.script.get_genre" = "Performs genre mapping"
+"help.script.get_genre.signature" = "$get_genre(genre[, default=GENRE_NOT_FOUND])"
+"help.script.get_genre_path" = "Get hierarchical genre data"
+"help.script.get_genre_path.signature" = "$get_genre_path(genre[, separator= > [, default=GENRE_NOT_FOUND]])"
+"help.script.series_get_known" = "Lookup a known series by id"
+"help.script.series_get_known.signature" = "$series_get_known(series_id)"
+"help.script.series_get_ignored" = "Lookup an ignored series by id"
+"help.script.series_get_ignored.signature" = "$series_get_ignored(series_id)"
+
+"qt.MetadataOverrideOptionsPage.window.title" = "Metadata Override"
+"qt.MetadataOverrideOptionsPage.data_folder.label" = "Data folder:"
+"qt.MetadataOverrideOptionsPage.data_folder.browse" = "Browse..."

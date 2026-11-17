@@ -1,0 +1,13 @@
+---
+albumartist:
+releasegroup:
+    e162083e-4a0b-49f9-b341-7a02354f5c98: # file the CD as "American II: Unchained"
+        album: "American II: Unchained"
+album:
+artist:
+    01809552-4f87-45b0-afff-2c6f0730a3be: # set artist all tracks of Elvis Presley to "Elvis"
+        artist: Elvis
+work:
+recording:
+track:
+...
