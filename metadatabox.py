@@ -67,7 +67,7 @@ def _monkey_MetadataBox_update_tags(
                 metadata = file.metadata
                 orig = file._mo_orig
                 for k in file._mo_overrides:
-                    _overrides[k] = metadata.get(k) != orig.get(k)
+                    _overrides[k] = metadata.getall(k) != orig.get(k)
 
         for track in tracks:
             # process tracks WITHOUT files
@@ -75,7 +75,7 @@ def _monkey_MetadataBox_update_tags(
                 metadata = track.metadata
                 orig = track._mo_orig
                 for k in track._mo_overrides:
-                    _overrides[k] = metadata.get(k) != orig.get(k)
+                    _overrides[k] = metadata.getall(k) != orig.get(k)
 
     return wrapped(self, new_selection, drop_album_caches, diff_colors)
 

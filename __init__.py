@@ -91,7 +91,7 @@ def _set_overrides(obj: Track | File, overrides: data.OverridesData | None = Non
                 override_keys.update(keys)
 
                 for k in keys - orig.keys():
-                    orig[k] = metadata[k]
+                    orig[k] = metadata.getall(k)
                 metadata.update(ov_for_id)
 
     for k in orig.keys() - override_keys:
