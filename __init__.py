@@ -82,7 +82,7 @@ def _set_overrides(obj: Track | File, overrides: data.OverridesData | None = Non
     objx._mo_overrides = override_keys = set()
 
     for name in ('albumartist', 'releasegroup', 'album', 'artist', 'work', 'recording', 'track'):
-        ids = metadata[f'musicbrainz_{name}id']
+        ids = metadata.getall(f'musicbrainz_{name}id')
         if ids and (ov_for_name := overrides.get(name)):
             for ov_for_id in filter(
                 None, map(ov_for_name.get, ids if isinstance(ids, (list, tuple, set, dict)) else [ids])
